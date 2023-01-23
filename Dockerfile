@@ -15,6 +15,7 @@ WORKDIR /opt/flask-app
 RUN npm install
 RUN npm run build
 RUN pip3 install -r requirements.txt
+pip install -U urllib3 requests
 
 # expose port
 EXPOSE 5000
