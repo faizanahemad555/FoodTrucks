@@ -1,8 +1,6 @@
 # start from base
 FROM ubuntu:18.04
 
-LABEL maintainer="Prakhar Srivastav <prakhar@prakhar.me>"
-
 # install system-wide deps for python and node
 RUN apt-get -yqq update
 RUN apt-get -yqq install python3-pip python3-dev curl gnupg
